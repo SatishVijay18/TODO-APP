@@ -1,0 +1,132 @@
+html,
+body {
+  margin: 0;
+  height: 100%;
+  background-color: black;
+}
+#root {
+  height: 100%;
+  width: 100%;
+}
+
+.main-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+.todo-list-container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background: #2c2c2c;
+  display: block;
+  height: 70vh;
+  width: 85vw;
+  margin: 2rem;
+}
+
+h1 {
+  text-align: center;
+  font-weight: 300;
+  color: red;
+  font-size: 1.5rem;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+}
+
+input {
+  width: 450px;
+  padding: 0.8em;
+}
+
+input:focus {
+  outline: none;
+}
+
+button {
+  width: 120px;
+  padding: 0.8em;
+  cursor: pointer;
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+}
+
+input,
+button {
+  font-size: 0.7rem;
+  appearance: none;
+  color: currentcolor;
+  border: 1px solid #828691;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.input-div {
+  justify-content: center;
+  display: flex;
+}
+
+.no-todos {
+  text-align: center;
+}
+
+.done {
+  display: none;
+}
+
+.button-delete {
+  background-color: transparent;
+  padding: 0;
+  font-size: 12px;
+  height: 2rem;
+  width: 7rem;
+}
+
+.todos-wrapper-div {
+  flex-direction: row;
+  display: flex;
+  justify-content: space-around;
+}
+html {
+  font-family: Helvetica;
+  font-size: 24px;
+}
+.strike {
+  position: relative;
+}
+.strike::after {
+  content: " ";
+  position: absolute;
+  top: 50%;
+  left: 3%;
+  width: 0;
+  height: 10px;
+  opacity: 80%;
+  transform: translateY(-50%);
+  background: repeat-x
+    url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB0AAAAKAQMAAAByjsdvAAAABlBMVEUAAADdMzNrjRuKAAAAAXRSTlMAQObYZgAAADdJREFUCNdj+MMABP8ZGCQY/h9g+MHw/AHzDwbGD+w/GBhq6h8wMNj/b2BgkP8HVMMPUsn+gQEAsTkQNRVnI4cAAAAASUVORK5CYII=);
+  animation: strike 2s linear 0.3s 1 forwards;
+}
+@keyframes strike {
+  to {
+    width: 20%;
+  }
+}
+
+.todo-list-item {
+  align-items: center;
+  display: flex;
+  margin: 0px 15px;
+  width: 2rem;
+}
+
+.todo-wrapper-div {
+  justify-content: space-around;
+  display: flex;
+}
