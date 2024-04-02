@@ -1,10 +1,4 @@
-## React + Vite + TailwindCSS template
-
-Create your own project based on this template by running:
-
-```bash
-npx degit quavedev/react-vite-tailwindcss-template your-project
-```
+## Todo App
 
 ## Install
 
@@ -31,10 +25,6 @@ Preview:
 ```bash
 npm run preview
 ```
-
-## Deploy on zCloud
-
-Create your account at [zcloud.ws](https://zcloud.ws).
 
 Connect to your GitHub, create your app and done!
 
