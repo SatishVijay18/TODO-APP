@@ -29,7 +29,7 @@ export default function TodoForm({
             toggleComplete(todo.key);
           }}
         >
-          💀
+          👍
         </button>
       </div>
     </div>
